@@ -12,6 +12,6 @@ public class Student extends Person {
         this.haveGraduated = status;
     }
     public String toString(){
-        return "Student name " + name + ", class taught " + currentClass + ".";
+        return "Student name " + name + ".";
     }
 }

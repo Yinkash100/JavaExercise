@@ -32,8 +32,8 @@ public class Sample {
         class1.addStudents(newStudents);
         class1.printClassDetails();
 
-        class1.removeStudent(jerry);
-        class1.printClassDetails();
+        // class1.removeStudents(newStudents);
+        // class1.printClassDetails();
 
         mary.changeGraduatedStatus(true);
         arya.changeGraduatedStatus(true);

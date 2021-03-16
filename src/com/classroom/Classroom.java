@@ -26,7 +26,11 @@ public class Classroom {
     }
 
     public void removeStudents(ArrayList<Student> student){
-        studentList.removeAll(student);
+        Iterator<Student> i = student.iterator();
+        while (i.hasNext()) {
+            Student s = i.next();
+            studentList.remove(s);
+        }
     }
 
     public void removeGraduatedStudents (){
@@ -47,6 +51,6 @@ public class Classroom {
     public void printClassDetails(){
         System.out.print("\n\n" + className
                 + " is taught by  "+ classTeacher.name +"\n and contains "
-                + studentList.size() + " students.");
+                + studentList.toString() + " students.");
     }
 }
